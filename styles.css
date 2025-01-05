@@ -1,0 +1,209 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333333;
+}
+
+.container {
+    max-width: 850px;
+    margin-left: 20px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.header p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.header a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+hr {
+    display: none;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333333;
+    padding-bottom: 5px;
+}
+
+/* Consistent Font Style for Section Content */
+.section p,
+.section ul li {
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    font-size: 14px; /* Consistent size */
+    line-height: 1.5; /* Consistent line height */
+    color: #333333; /* Consistent color */
+}
+
+/* Education Section */
+.education-item {
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.two-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-column .left {
+    width: 70%;
+}
+
+.two-column .right {
+    width: 28%;
+    text-align: right;
+    font-size: 14px;
+    color: #666666;
+}
+
+.education-item p {
+    margin: 0;
+}
+
+.education-item ul,
+.projects ul,
+.experience-item ul {
+    list-style: disc;
+    list-style-position: inside;
+    margin: 5px 0 0;
+    padding-left: 20px;
+}
+
+.education-item ul li,
+.projects ul li,
+.experience-item ul li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    text-indent: -20px;
+}
+
+/* Professional Experience Section */
+.experience-item {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.header-row .left {
+    width: 65%;
+}
+
+.header-row .right {
+    width: 30%;
+    text-align: right;
+    font-size: 14px;
+    color: #666666;
+}
+
+.header-row p {
+    margin: 0;
+}
+
+.project-item p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.project-item ul {
+    list-style: disc;
+    list-style-position: inside;
+    margin: 5px 0 0;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+.project-item ul li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    text-indent: -20px;
+}
+
+/* Skills Section */
+.section p {
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.section p strong {
+    font-weight: bold;
+}
+
+/* Download Button */
+#download-btn {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#download-btn:hover {
+    background: #0056b3;
+}
+
+.section p,
+.section ul li {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+
+page{
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+  }
+  
+  page[size="A4"] {  
+    width: 21cm;
+    height: 29.7cm; 
+  }
+  
+  @page {
+     size: 21cm 29.7cm;
+     padding: 0;
+     margin: 0mm;
+     border: none;
+     border-collapse: collapse;
+  }
