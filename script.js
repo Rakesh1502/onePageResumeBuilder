@@ -5,7 +5,7 @@ window.onload = function () {
         // Select the resume content
         const resumeElement = document.getElementById("resume");
 
-        // Define A4 page dimensions
+        // Apply A4 dimensions
         const a4Width = 595.28; // A4 width in points
         const a4Height = 841.89; // A4 height in points
 
@@ -17,7 +17,7 @@ window.onload = function () {
             const contentWidth = canvas.width;
             const contentHeight = canvas.height;
 
-            // Calculate scale to fit content in A4 page
+            // Calculate scaling to fit content in A4 dimensions
             const widthScale = a4Width / contentWidth;
             const heightScale = a4Height / contentHeight;
             const scaleFactor = Math.min(widthScale, heightScale);
@@ -27,6 +27,14 @@ window.onload = function () {
             const imgData = canvas.toDataURL('image/jpeg', 1.0);
             const scaledWidth = contentWidth * scaleFactor;
             const scaledHeight = contentHeight * scaleFactor;
+
+            // Adjust <li> styling to ensure bullets are indented
+            const listItems = resumeElement.querySelectorAll("li");
+            listItems.forEach(li => {
+                li.style.marginLeft = "20px"; // Moves bullets to the right
+                li.style.textIndent = "-20px"; // Keeps bullets aligned
+                li.style.listStylePosition = "inside"; // Align bullets with text
+            });
 
             // Add scaled content to the PDF
             pdf.addImage(imgData, 'JPEG', 0, 0, scaledWidth, scaledHeight);
